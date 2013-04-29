@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A036B8C-34B8-4DD3-8CAD-CDF5DFC56327}</ProjectGuid>
+    <RootNamespace>BBK</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(ProjectDir)include/platform;$(ProjectDir)include/math;$(ProjectDir)include/intersect;$(ProjectDir)include/graphics;$(ProjectDir)include/framework;$(ProjectDir)include/fileio;$(ProjectDir)include;$(ProjectDir)lib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(ProjectDir)include/platform;$(ProjectDir)include/math;$(ProjectDir)include/intersect;$(ProjectDir)include/graphics;$(ProjectDir)include/framework;$(ProjectDir)include/fileio;$(ProjectDir)include;$(ProjectDir)lib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\bbk.h" />
+    <ClInclude Include="include\compiler.h" />
+    <ClInclude Include="include\fileio\fileio.h" />
+    <ClInclude Include="include\fileio\xmlAttrib.h" />
+    <ClInclude Include="include\fileio\xmlElement.h" />
+    <ClInclude Include="include\framework\BArchive.h" />
+    <ClInclude Include="include\framework\baseobjs\camera.h" />
+    <ClInclude Include="include\framework\baseobjs\DisClothParticle.h" />
+    <ClInclude Include="include\framework\baseobjs\DisClothParticle8.h" />
+    <ClInclude Include="include\framework\baseobjs\DisParticle.h" />
+    <ClInclude Include="include\framework\baseobjs\perspcam.h" />
+    <ClInclude Include="include\framework\BObject.h" />
+    <ClInclude Include="include\framework\gamestate.h" />
+    <ClInclude Include="include\framework\gamestatemgr.h" />
+    <ClInclude Include="include\framework\SceneObjGeom.h" />
+    <ClInclude Include="include\graphics\colour.h" />
+    <ClInclude Include="include\graphics\graphics.h" />
+    <ClInclude Include="include\graphics\model.h" />
+    <ClInclude Include="include\graphics\rendercontext.h" />
+    <ClInclude Include="include\graphics\resources\mesh.h" />
+    <ClInclude Include="include\graphics\resources\shaderobj.h" />
+    <ClInclude Include="include\graphics\resources\texture.h" />
+    <ClInclude Include="include\graphics\shaders\locationmgr.h" />
+    <ClInclude Include="include\graphics\shaders\shaderprog.h" />
+    <ClInclude Include="include\graphics\vertex.h" />
+    <ClInclude Include="include\intersect\AABB.h" />
+    <ClInclude Include="include\intersect\BSphere.h" />
+    <ClInclude Include="include\intersect\BVH_node.h" />
+    <ClInclude Include="include\intersect\intersect.h" />
+    <ClInclude Include="include\intersect\OBB.h" />
+    <ClInclude Include="include\math\conversions.h" />
+    <ClInclude Include="include\math\forces.h" />
+    <ClInclude Include="include\math\frustum.h" />
+    <ClInclude Include="include\math\lines.h" />
+    <ClInclude Include="include\math\mathlib.h" />
+    <ClInclude Include="include\math\matrix3x3.h" />
+    <ClInclude Include="include\math\matrix4x4.h" />
+    <ClInclude Include="include\math\plane.h" />
+    <ClInclude Include="include\math\quaternion.h" />
+    <ClInclude Include="include\math\triangle.h" />
+    <ClInclude Include="include\math\tuple.h" />
+    <ClInclude Include="include\math\vector3.h" />
+    <ClInclude Include="include\math\vector4.h" />
+    <ClInclude Include="include\platform\appwindow.h" />
+    <ClInclude Include="include\platform\clock.h" />
+    <ClInclude Include="include\platform\event.h" />
+    <ClInclude Include="include\platform\eventslist.h" />
+    <ClInclude Include="include\platform\inputkeys.h" />
+    <ClInclude Include="include\platform\keyboard.h" />
+    <ClInclude Include="include\platform\mouse.h" />
+    <ClInclude Include="include\platform\platform.h" />
+    <ClInclude Include="include\platform\pollster.h" />
+    <ClInclude Include="include\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bbk.cpp" />
+    <ClCompile Include="src\fileio\fileio.cpp" />
+    <ClCompile Include="src\fileio\xmlAttrib.cpp" />
+    <ClCompile Include="src\fileio\xmlElement.cpp" />
+    <ClCompile Include="src\framework\BArchive.cpp" />
+    <ClCompile Include="src\framework\baseobjs\camera.cpp" />
+    <ClCompile Include="src\framework\baseobjs\DisClothParticle.cpp" />
+    <ClCompile Include="src\framework\baseobjs\DisClothParticle8.cpp" />
+    <ClCompile Include="src\framework\baseobjs\DisParticle.cpp" />
+    <ClCompile Include="src\framework\baseobjs\perspcam.cpp" />
+    <ClCompile Include="src\framework\BObject.cpp" />
+    <ClCompile Include="src\framework\gamestatemgr.cpp" />
+    <ClCompile Include="src\graphics\graphics.cpp" />
+    <ClCompile Include="src\graphics\model.cpp" />
+    <ClCompile Include="src\graphics\resources\mesh.cpp" />
+    <ClCompile Include="src\graphics\resources\shaderobj.cpp" />
+    <ClCompile Include="src\graphics\resources\texture.cpp" />
+    <ClCompile Include="src\graphics\shaders\locationmgr.cpp" />
+    <ClCompile Include="src\graphics\shaders\shaderprog.cpp" />
+    <ClCompile Include="src\intersect\intersect.cpp" />
+    <ClCompile Include="src\math\forces.cpp" />
+    <ClCompile Include="src\math\mathlib.cpp" />
+    <ClCompile Include="src\math\matrix3x3.cpp" />
+    <ClCompile Include="src\math\matrix4x4.cpp" />
+    <ClCompile Include="src\math\vector3.cpp" />
+    <ClCompile Include="src\math\vector4.cpp" />
+    <ClCompile Include="src\platform\appwindow.cpp" />
+    <ClCompile Include="src\platform\clock.cpp" />
+    <ClCompile Include="src\platform\keyboard.cpp" />
+    <ClCompile Include="src\platform\mouse.cpp" />
+    <ClCompile Include="src\platform\platform.cpp" />
+    <ClCompile Include="src\platform\pollster.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

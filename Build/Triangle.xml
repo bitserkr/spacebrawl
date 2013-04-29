@@ -1,0 +1,25 @@
+<Model name="Triangle">
+    <Geometry numVertices="3" numIndices="3">
+        <Positions>-0.5 -0.5 0.0 0.5 -0.5 0.0 -0.5 0.5 -0.0</Positions>
+		<Texture_coords>0.0 1.0 1.0 1.0 0.0 0.0</Texture_coords>
+        <Normals>0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0</Normals>
+		<Indices>0 1 2</Indices>
+    </Geometry>
+    <BoundingVolumes>
+        <BSphere>
+            <center x="0.0" y="0.0" z="0.0"></center>
+            <radius radius="0.707106"></radius>
+        </BSphere>
+        <AABB>
+            <center x="0.000000" y="0.000000" z="0.000000"></center>
+            <halfextents x="0.500000" y="0.500000" z="0.000001"></halfextents>
+        </AABB>
+        <OBB>
+            <u x="1.000000" y="0.000000" z="0.000000"></u>
+            <v x="0.000000" y="1.000000" z="0.000000"></v>
+            <w x="0.000000" y="0.000000" z="1.000000"></w>
+            <center x="0.000000" y="0.000000" z="0.000000"></center>
+            <halfextents x="0.500000" y="0.500000" z="0.000001"></halfextents>
+        </OBB>
+    </BoundingVolumes>
+</Model>

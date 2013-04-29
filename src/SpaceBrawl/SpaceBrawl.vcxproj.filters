@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Gamestates">
+      <UniqueIdentifier>{8194d965-5ca3-4fa7-b9e5-34cc79362bfb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gamestates\Sandbox.cpp">
+      <Filter>Gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gamestates\Sandbox.h">
+      <Filter>Gamestates</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File IO">
+      <UniqueIdentifier>{8147afb2-2b51-43b2-a9e6-6935aa700693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{222d7c85-5342-4d15-a817-18d7bc223ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Base Objects">
+      <UniqueIdentifier>{dd331b10-68ab-403e-a570-6c39546193b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{57379b43-6966-46ad-932f-56044ce5dbd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Resources">
+      <UniqueIdentifier>{63ed9761-763d-40aa-a408-073aee929e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Shaders">
+      <UniqueIdentifier>{a27336b0-6965-4a58-846f-ce704216fa2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Intersection Tests">
+      <UniqueIdentifier>{dcc44dcd-8676-44a5-90a0-95c191e1837e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{e6c5c776-c34d-4316-bfeb-64b2ab688a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{ed2122ed-733c-4a20-b351-2d64aed27d62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\fileio\fileio.h">
+      <Filter>File IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fileio\xmlAttrib.h">
+      <Filter>File IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fileio\xmlElement.h">
+      <Filter>File IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\gamestate.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\gamestatemgr.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\SceneObjGeom.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\baseobjs\camera.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\baseobjs\DisClothParticle.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\baseobjs\DisClothParticle8.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\baseobjs\DisParticle.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\baseobjs\perspcam.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\colour.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\graphics.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\model.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\rendercontext.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\vertex.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\shaders\locationmgr.h">
+      <Filter>Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\shaders\shaderprog.h">
+      <Filter>Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\resources\mesh.h">
+      <Filter>Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\resources\shaderobj.h">
+      <Filter>Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\resources\texture.h">
+      <Filter>Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="include\intersect\AABB.h">
+      <Filter>Intersection Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\intersect\BSphere.h">
+      <Filter>Intersection Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\intersect\BVH_node.h">
+      <Filter>Intersection Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\intersect\intersect.h">
+      <Filter>Intersection Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\intersect\OBB.h">
+      <Filter>Intersection Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\conversions.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\forces.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\frustum.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\lines.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\matrix3x3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\matrix4x4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\plane.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\triangle.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\tuple.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\appwindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\clock.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\event.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\eventslist.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\inputkeys.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\keyboard.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\mouse.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\platform.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\pollster.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bbk.h" />
+    <ClInclude Include="include\compiler.h" />
+    <ClInclude Include="include\utils.h" />
+    <ClInclude Include="include\framework\BObject.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\BArchive.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\mathlib.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fileio\fileio.cpp">
+      <Filter>File IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fileio\xmlAttrib.cpp">
+      <Filter>File IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fileio\xmlElement.cpp">
+      <Filter>File IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gamestatemgr.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\baseobjs\camera.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\baseobjs\DisClothParticle.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\baseobjs\DisClothParticle8.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\baseobjs\DisParticle.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\baseobjs\perspcam.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\shaders\locationmgr.cpp">
+      <Filter>Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\shaders\shaderprog.cpp">
+      <Filter>Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\resources\mesh.cpp">
+      <Filter>Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\resources\shaderobj.cpp">
+      <Filter>Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\resources\texture.cpp">
+      <Filter>Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\graphics.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\model.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intersect\intersect.cpp">
+      <Filter>Intersection Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\forces.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\matrix3x3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\matrix4x4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\vector3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\vector4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\appwindow.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\clock.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\keyboard.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\mouse.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\platform.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\pollster.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bbk.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+    <ClCompile Include="src\framework\BObject.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\BArchive.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\mathlib.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
